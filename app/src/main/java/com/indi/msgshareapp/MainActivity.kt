@@ -34,5 +34,11 @@ val intent = Intent(this,SecondActivity::class.java)
             intent.type = "text/plain"
             startActivity(Intent.createChooser(intent,"Share with"))
         }
+        btnShowRecyclerView.setOnClickListener {
+            val intent = Intent(this,HobbiesActivity::class.java)
+            //intent.putExtra("user_message",message)
+            startActivity(intent)
+        }
+        
     }
 }
