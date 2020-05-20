@@ -1,9 +1,9 @@
-package com.indi.msgshareapp
+package com.indi.msgshareapp.models
 
 data class Hobby(var title: String)
 
 object Supplier{
-val hobbies = listOf<Hobby>(
+val hobbies = listOf(
         Hobby("Swimming"),
         Hobby("Reading"),
         Hobby("Dancing"),
@@ -12,7 +12,8 @@ val hobbies = listOf<Hobby>(
         Hobby("Sleeping"),
         Hobby("Gaming"),
         Hobby("Programming"),
-        Hobby("Talking"))
+        Hobby("Talking")
+)
 }
 
 

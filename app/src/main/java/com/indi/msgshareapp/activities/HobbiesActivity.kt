@@ -1,26 +1,28 @@
-package com.indi.msgshareapp
+package com.indi.msgshareapp.activities
 
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.indi.msgshareapp.adapters.HobbiesAdapter
+import com.indi.msgshareapp.R
+import com.indi.msgshareapp.models.Supplier
 import kotlinx.android.synthetic.main.activity_hobbies.*
 
 class HobbiesActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_hobbies)
+        setContentView(R.layout.activity_hobbies)
+        setupRecyclerView()
+    }
 
+    private fun setupRecyclerView(){
         val layoutManager = LinearLayoutManager(this)
- //       val layoutManager = GridLayoutManagerLayoutManager(this)
-//        val layoutManager = StaggeredGridLayoutManager(this)
+        //val layoutManager = GridLayoutManagerLayoutManager(this)
+        //val layoutManager = StaggeredGridLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
-
-        val adapter = HobbiesAdapter(this, Supplier.hobbies)
+        val adapter = HobbiesAdapter(this,Supplier.hobbies)
         recyclerView.adapter = adapter
     }
 }

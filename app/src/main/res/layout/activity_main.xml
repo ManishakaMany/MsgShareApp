@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activities.MainActivity"
     android:padding="10dp"
     >
 
@@ -16,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="75dp"
-        android:text="Show Toast" />
+        android:text="@string/show_toast" />
 
     <EditText
         android:id="@+id/etUserMessage"
@@ -26,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="166dp"
         android:ems="10"
-        android:hint="Enter Your Message" />
+        android:hint="@string/enter_your_message" />
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
@@ -35,7 +34,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="297dp"
-        android:text="Send Data To Next Activity" />
+        android:text="@string/send_data_to_next_activity" />
 
     <Button
         android:id="@+id/btnShareToOtherApps"
@@ -44,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="230dp"
-        android:text="Share To Other Apps" />
+        android:text="@string/share_to_other_apps" />
 
     <Button
         android:id="@+id/btnShowRecyclerView"
@@ -53,6 +52,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="149dp"
-        android:text="Show Recycler View" />
+        android:text="@string/show_recycler_view" />
 
 </RelativeLayout>
