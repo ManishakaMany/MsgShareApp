@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">मैसेज शेयर ऐप</string>
+    <string name="share_to_other_apps">अन्य एप्लिकेशन को साझा करें</string>
+    <string name="show_toast">टोस्ट दिखाओ</string>
+    <string name="enter_your_message">अपना संदेश दर्ज करें</string>
+    <string name="send_data_to_next_activity">अगली गतिविधि के लिए डेटा भेजें</string>
+    <string name="show_recycler_view">दिखाएँ पुनर्नवीनीकरण देखें</string>
+    <string name="button_was_clicked">बटन पर क्लिक किया गया</string>
+    <string name="share_with">शेयर करें</string>
+
+
+</resources>

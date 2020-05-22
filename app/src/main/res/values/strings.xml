@@ -5,4 +5,6 @@
     <string name="enter_your_message">Enter Your Message</string>
     <string name="send_data_to_next_activity">Send Data To Next Activity</string>
     <string name="show_recycler_view">Show Recycler View</string>
+    <string name="button_was_clicked">Button was clicked</string>
+    <string name="share_with">share with</string>
 </resources>

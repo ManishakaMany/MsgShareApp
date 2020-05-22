@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             Log.i(TAG,"Button Was Clicked !")
             //Log.i("MainActivity","Button Was Clicked !")
-            showToast("Button was Clicked !")
+            showToast(resources.getString(R.string.button_was_clicked))
         }
         btnSendMsgToNextActivity.setOnClickListener {
             Log.i(TAG,"Second Button Was Clicked !")
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
-            startActivity(Intent.createChooser(intent,"Share with"))
+            startActivity(Intent.createChooser(intent,resources.getString(R.string.share_with)))
         }
         btnShowRecyclerView.setOnClickListener {
             val intent = Intent(this, HobbiesActivity::class.java)
